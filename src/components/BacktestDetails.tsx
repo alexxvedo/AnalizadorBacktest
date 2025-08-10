@@ -507,14 +507,8 @@ export function BacktestDetails({ backtest, onClose }: BacktestDetailsProps) {
                                 </TableCell>
                                 <TableCell>{trade.openTime}</TableCell>
                                 <TableCell>
-                                  <Badge
-                                    variant={
-                                      trade.type.includes("buy")
-                                        ? "default"
-                                        : "secondary"
-                                    }
-                                  >
-                                    {trade.type}
+                                  <Badge variant="secondary">
+                                    {trade.order}
                                   </Badge>
                                 </TableCell>
                                 <TableCell>{trade.volume}</TableCell>
